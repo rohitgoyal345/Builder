@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 import Quality from "./Quality";
 import About from  "./About";
+import Countdown from  "./Countdown";
 
 function Banner() {
   return (
@@ -32,6 +33,7 @@ function Banner() {
     </div>
      <Quality />
      <About />
+     <Countdown />
     </>
   );
 }

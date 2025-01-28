@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-// image 
 
-import about_img from '../Assets/Images/about-img.jpg';
 
 function About() {
   return (
@@ -24,7 +22,8 @@ function About() {
 
           <Col lg={6}>
            <div className="about-img">
-             <img src={about_img} alt="about_img" />
+              <div className="about-imgs"></div>
+              <div className="about-img-shape1"></div>
            </div>
           </Col>
 

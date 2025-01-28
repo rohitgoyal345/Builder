@@ -7,11 +7,16 @@ import './Assets/Styles/Header&Footer.scss';
 import './Assets/Styles/Banner.scss';
 import './Assets/Styles/quality.scss';
 import './Assets/Styles/About.scss';
+import './Assets/Styles/Countdown.scss';
 
 // bootstrap import link
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// aos link
+
+import 'aos/dist/aos.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
