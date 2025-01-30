@@ -8,6 +8,8 @@ import './Assets/Styles/Banner.scss';
 import './Assets/Styles/quality.scss';
 import './Assets/Styles/About.scss';
 import './Assets/Styles/Countdown.scss';
+import './Assets/Styles/Recent-project.scss';
+import './Assets/Styles/Video.scss';
 
 // bootstrap import link
 import 'bootstrap/dist/css/bootstrap.min.css';

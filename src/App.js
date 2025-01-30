@@ -17,6 +17,8 @@ import Banner from "./Pages/Banner.js";
 import Quality from './Pages/Quality.js';
 import About from './Pages/About.js';
 import Countdown from './Pages/Countdown.js';
+import Recent from './Pages/Recent-project.js';
+import Video from './Pages/Video.js';
 
 import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
 
@@ -33,6 +35,8 @@ function App() {
             <Route path="/" element={<Quality />} />
             <Route path="/" element={<About />} />
             <Route path="/" element={<Countdown />} />
+            <Route path="/" element={<Recent />} />
+            <Route path="/" element={<Video />} />
           </Routes>
         </main>
         {/* <Footer /> */}

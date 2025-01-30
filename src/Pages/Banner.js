@@ -7,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 import Quality from "./Quality";
 import About from  "./About";
 import Countdown from  "./Countdown";
+import Recent from "./Recent-project";
+import Video from "./Video";
 
 function Banner() {
   return (
@@ -34,6 +36,8 @@ function Banner() {
      <Quality />
      <About />
      <Countdown />
+     <Recent />
+     <Video />
     </>
   );
 }
