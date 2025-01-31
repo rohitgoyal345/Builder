@@ -9,6 +9,7 @@ import About from  "./About";
 import Countdown from  "./Countdown";
 import Recent from "./Recent-project";
 import Video from "./Video";
+import Service from "./Service";
 
 function Banner() {
   return (
@@ -38,6 +39,7 @@ function Banner() {
      <Countdown />
      <Recent />
      <Video />
+     <Service />
     </>
   );
 }

@@ -37,6 +37,33 @@ $text-color:#555555;
         text-align: center;
         a{
             text-decoration: none;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 0;
+                left: 50%;
+                top: 3%;
+                display: block;
+                width: 100px;
+                height: 100px;
+                background:$bg-color;
+                border-radius: 50%;
+                animation: ripple 1500ms ease-out infinite;
+                z-index: -1;
+                @keyframes ripple {
+                    0% {
+                        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+                        opacity: 0;
+                    }
+                }
+            }
+            
             i{
                 background:$white-color;
                 padding: 23px 30px;
@@ -44,38 +71,16 @@ $text-color:#555555;
                 font-size: 40px;
                 color:$bg-color;
             }
-            &::before{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 100px;
-                height: 100px;
-                margin-left: .5px;
-                transform: translate(-50%, -50%);
-                border-radius: 50px;
-                box-shadow: 0 0 0 0 rgba(255, 255, 255, .4);
-                animation: ripple 3s infinite linear;
-            }
-            &::after{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 100px;
-                height: 100px;
-                margin-left: .5px;
-                transform: translate(-50%, -50%);
-                border-radius: 50px;
-                box-shadow: 0 0 0 0 rgba(255, 255, 255, .4);
-                animation: ripple 3s infinite linear;
-            }
-            @keyframes ripple {
-                70% {
-                    box-shadow: 0 0 0 70px rgba(253, 167, 0, 0);
-                }
-                100% {
-                    box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);
-                }
-            }
+        }
+    }
+}
+
+.modal-content {
+    background: $black-color !important;
+    .modal-header {
+        justify-content: right;
+        .video-btn{
+            color: white !important;
         }
     }
 }

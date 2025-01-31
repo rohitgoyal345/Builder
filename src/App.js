@@ -19,6 +19,7 @@ import About from './Pages/About.js';
 import Countdown from './Pages/Countdown.js';
 import Recent from './Pages/Recent-project.js';
 import Video from './Pages/Video.js';
+import Service from './Pages/Service.js';
 
 import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
 
@@ -37,6 +38,7 @@ function App() {
             <Route path="/" element={<Countdown />} />
             <Route path="/" element={<Recent />} />
             <Route path="/" element={<Video />} />
+            <Route path="/" element={<Service />} />
           </Routes>
         </main>
         {/* <Footer /> */}

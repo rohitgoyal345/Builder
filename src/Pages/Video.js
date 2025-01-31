@@ -24,20 +24,25 @@ function Video() {
       </Container>
 
       <Modal show={show} onHide={() => setShow(false)} centered size="lg">
-        <Modal.Body className="p-0">
-          <div className="video-container">
-            <iframe
-              width="100%"
-              height="400"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-              title="Video"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </Modal.Body>
-      </Modal>
+  <Modal.Header>
+    <button className=" video-btn btn p-0 border-0" onClick={() => setShow(false)}>
+      <i className="bi bi-x-circle fs-4"></i>
+    </button>
+  </Modal.Header>
+  <Modal.Body className="p-0">
+    <div className="video-container">
+      <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/4BzjUq921Y4?autoplay=1&mute=1"
+        title="Video"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </Modal.Body>
+</Modal>
      
     </div>
   );

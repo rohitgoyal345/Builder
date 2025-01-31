@@ -10,6 +10,7 @@ import './Assets/Styles/About.scss';
 import './Assets/Styles/Countdown.scss';
 import './Assets/Styles/Recent-project.scss';
 import './Assets/Styles/Video.scss';
+import './Assets/Styles/Service.scss';
 
 // bootstrap import link
 import 'bootstrap/dist/css/bootstrap.min.css';
